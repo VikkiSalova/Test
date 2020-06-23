@@ -1,0 +1,51 @@
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+    bottom: .5em;
+}
+.alert-arrow.alert-success {
+    border: 1px solid #60c060;
+    margin-top: 10px;
+}
+.alert-arrow.alert-success .alert-icon {
+    background-color: #60c060;
+}
+.alert-arrow .alert-icon {
+    position: relative;
+    width: 3rem;
+}
+.alert-arrow .alert-icon::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: .75rem solid transparent;
+    border-bottom: .75rem solid transparent;
+    border-left: .75rem solid;
+    right: -.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.alert-arrow.alert-success .alert-icon::after {
+    border-left: .75rem solid #60c060;
+}
+.alert-arrow.alert-success .close {
+    font-size: 1rem;
+    color: #cacaca;
+}
+.danger {
+    color: red;  
+}
+.edit {
+    color: dimgray;  
+}
+body{
+    padding: 20px;
+}
